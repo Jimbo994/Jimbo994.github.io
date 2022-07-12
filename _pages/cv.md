@@ -12,4 +12,5 @@ Download: <br>
 
 <br>
 Last updated: 12-07-2022
+<br>
 <object data="../assets/pdf/CV_website.pdf" width="1000" height="1000" type='application/pdf'> </object>
