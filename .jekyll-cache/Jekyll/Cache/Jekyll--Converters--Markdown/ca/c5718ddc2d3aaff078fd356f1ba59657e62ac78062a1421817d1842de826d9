@@ -1,4 +1,4 @@
-I"`<p>Every project has a beautiful feature showcase page.
+I"ÿ<p>Every project has a beautiful feature showcase page.
 Itâ€™s easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.</p>
 
@@ -18,10 +18,6 @@ img: /assets/img/12.jpg
 
   <picture>
     
-    <source media="(max-width: 480px)" srcset="/assets/img/1-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/1-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/1-1400.webp" />
-    
 
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/1.jpg" width="auto" height="auto" title="example image" />
@@ -36,10 +32,6 @@ img: /assets/img/12.jpg
 
   <picture>
     
-    <source media="(max-width: 480px)" srcset="/assets/img/3-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/3-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/3-1400.webp" />
-    
 
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/3.jpg" width="auto" height="auto" title="example image" />
@@ -53,10 +45,6 @@ img: /assets/img/12.jpg
         <figure>
 
   <picture>
-    
-    <source media="(max-width: 480px)" srcset="/assets/img/5-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/5-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp" />
     
 
     <!-- Fallback to the original file -->
@@ -76,10 +64,6 @@ img: /assets/img/12.jpg
         <figure>
 
   <picture>
-    
-    <source media="(max-width: 480px)" srcset="/assets/img/5-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/5-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/5-1400.webp" />
     
 
     <!-- Fallback to the original file -->
@@ -105,10 +89,6 @@ You describe how you toiled, sweated, <em>bled</em> for your project, and thenâ€
 
   <picture>
     
-    <source media="(max-width: 480px)" srcset="/assets/img/6-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/6-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/6-1400.webp" />
-    
 
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/6.jpg" width="auto" height="auto" title="example image" />
@@ -122,10 +102,6 @@ You describe how you toiled, sweated, <em>bled</em> for your project, and thenâ€
         <figure>
 
   <picture>
-    
-    <source media="(max-width: 480px)" srcset="/assets/img/11-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/11-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/11-1400.webp" />
     
 
     <!-- Fallback to the original file -->

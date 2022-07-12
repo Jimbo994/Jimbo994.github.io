@@ -1,4 +1,4 @@
-I"m<h3 id="in-a-nutshell">In a Nutshell</h3>
+I"ò<h3 id="in-a-nutshell">In a Nutshell</h3>
 <p>Machine Learning applications on molecular systems is a rapidly devel-
 oping field over recent years as it can retain quantum chemical accuracy
 while reducing computational cost. A recently proposed and relatively data
@@ -34,10 +34,6 @@ Hence, both AL methods improve the efficiency of generating ML models.</p>
 
   <picture>
     
-    <source media="(max-width: 480px)" srcset="/assets/img/AL_quantum_final-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/AL_quantum_final-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/AL_quantum_final-1400.webp" />
-    
 
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/AL_quantum_final.png" width="auto" height="auto" title="flowchart" />
@@ -56,10 +52,6 @@ Hence, both AL methods improve the efficiency of generating ML models.</p>
         <figure>
 
   <picture>
-    
-    <source media="(max-width: 480px)" srcset="/assets/img/Emae_Fmae_subplots_AL_aspirin_dft_threshold01-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/Emae_Fmae_subplots_AL_aspirin_dft_threshold01-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/Emae_Fmae_subplots_AL_aspirin_dft_threshold01-1400.webp" />
     
 
     <!-- Fallback to the original file -->

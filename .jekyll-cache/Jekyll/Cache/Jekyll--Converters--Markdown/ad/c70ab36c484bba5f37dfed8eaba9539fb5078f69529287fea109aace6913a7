@@ -1,4 +1,4 @@
-I"2<h3 id="in-a-nutshell">In a Nutshell</h3>
+I"2	<h3 id="in-a-nutshell">In a Nutshell</h3>
 <p>Gradient elution liquid chromatography is a valuable tool in analytical chemistry.
 However, with the traditional trial-and-error approach, the search for an optimal
 gradient profile for a given sample can take several weeks. For this reason, opti-
@@ -27,10 +27,6 @@ for other variables.</p>
 
   <picture>
     
-    <source media="(max-width: 480px)" srcset="/assets/img/100_iters-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/100_iters-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/100_iters-1400.webp" />
-    
 
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/100_iters.jpeg" width="auto" height="auto" title="100 iterations" />
@@ -49,10 +45,6 @@ for other variables.</p>
         <figure>
 
   <picture>
-    
-    <source media="(max-width: 480px)" srcset="/assets/img/10000_iters-480.webp" />
-    <source media="(max-width: 800px)" srcset="/assets/img/10000_iters-800.webp" />
-    <source media="(max-width: 1400px)" srcset="/assets/img/10000_iters-1400.webp" />
     
 
     <!-- Fallback to the original file -->
