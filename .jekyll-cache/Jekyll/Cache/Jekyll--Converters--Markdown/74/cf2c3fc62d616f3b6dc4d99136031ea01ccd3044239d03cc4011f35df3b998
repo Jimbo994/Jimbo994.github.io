@@ -1,0 +1,78 @@
+I"m<h3 id="in-a-nutshell">In a Nutshell</h3>
+<p>Machine Learning applications on molecular systems is a rapidly devel-
+oping field over recent years as it can retain quantum chemical accuracy
+while reducing computational cost. A recently proposed and relatively data
+efficient method is NequIP, an open-source package for creating, training,
+and using E(3)-equivariant machine learning interatomic potentials. The
+application of this method was tested against multiple molecular systems
+including an electrochemical system of formate dehydrogenation on fcc(110)
+copper. Formate dehydrogenation on copper is a chemically interesting sys-
+tem as it (1) includes covalent and metallic bonds, (2) charge transfer occurs
+between surface and adsorbate, (3) contains distinct molecular states affect-
+ing adsorbate’s bond lengths differently and (4) involves bond breaking. In
+addition, the formation of formate from carbon dioxide is important for sus-
+tainability purposes as the amount of carbon dioxide can be reduced while
+making a useful molecule. This research illustrated that ML on this cop-
+per formate system is more complicated than on smaller molecules. The
+developed ML models were able to accurately predict energies and forces,
+resulting in the prediction of MD trajectories with a comparable radial dis-
+tribution function to the underlying ground truth. This was equally so for
+geometry optimizations. Furthermore, considerable speed-ups were achieved
+for single point calculations using ML compared to DFT. Two fully auto-
+mated AL pipelines were developed applicable to either large readily avail-
+able data sets as well as when no data set was present. In the first scenario, a
+considerably smaller training set is necessary for accurate model generation
+as redundant structures in the data are typically omitted. For the second
+scenario, AL could generate its own reference data on the fly. Consequently,
+the computation of expensive quantum chemical calculation could be re-
+duced and limited to structures necessary to obtain an accurate ML model.
+Hence, both AL methods improve the efficiency of generating ML models.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/img/AL_quantum_final-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/AL_quantum_final-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/AL_quantum_final-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/AL_quantum_final.png" width="auto" height="auto" title="flowchart" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/img/Emae_Fmae_subplots_AL_aspirin_dft_threshold01-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/Emae_Fmae_subplots_AL_aspirin_dft_threshold01-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/Emae_Fmae_subplots_AL_aspirin_dft_threshold01-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/Emae_Fmae_subplots_AL_aspirin_dft_threshold01.png" width="auto" height="auto" title="AL in action" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+MAEs of energy in kcal/mol (left) and Force in kcal/mol*Angstrom (right) on the MD17 aspirin DFT data set consisting of over 211000 structures, using the fully automated AL pipeline with a threshold variance of 0.1. Here, the black line corresponds to the ensemble's mean and green to the 95% confidence interval of the four models in the ensemble. Note that the initial training set contained 500 structures, after which 200 structures where added per cycle.
+</div>
+
+:ET

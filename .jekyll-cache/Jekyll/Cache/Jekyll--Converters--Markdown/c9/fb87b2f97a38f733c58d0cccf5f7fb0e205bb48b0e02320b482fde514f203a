@@ -1,0 +1,49 @@
+I"Ø<h3 id="in-a-nutshell">In a Nutshell</h3>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/img/100_iters-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/100_iters-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/100_iters-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/100_iters.jpeg" width="auto" height="auto" title="100 iterations" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source media="(max-width: 480px)" srcset="/assets/img/10000_iters-480.webp" />
+    <source media="(max-width: 800px)" srcset="/assets/img/10000_iters-800.webp" />
+    <source media="(max-width: 1400px)" srcset="/assets/img/10000_iters-1400.webp" />
+    
+
+    <!-- Fallback to the original file -->
+    <img class="img-fluid rounded z-depth-1" src="/assets/img/10000_iters.jpeg" width="auto" height="auto" title="10 000 iterations" />
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+</div>
+
+:ET

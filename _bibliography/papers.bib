@@ -1,0 +1,44 @@
+---
+---
+
+@string{aps = {American Physical Society,}}
+
+@article{boelrijk2022predicting,
+  title={Predicting RP-LC retention indices of structurally unknown chemicals from mass spectrometry data},
+  author={Boelrijk, Jim and van Herwerden, Denice and Samanipour, Saer  and Ensing, Bernd and Forr{\'e}, Patrick},
+  year={2022},
+  html={https://chemrxiv.org/engage/chemrxiv/article-details/6284b39d708767488a56959d},
+  abstract={Non-target analysis combined with high resolution mass spectrometry is considered one of the most comprehensive strategies for the detection and identification of known and unknown chemicals in complex samples. However, many compounds remain unidentified due to data complexity and limited structures in chemical databases. In this work, we have developed and validated a novel machine learning algorithm to predict the retention index (r$_i$) values for structurally (un)known chemicals based on their measured fragmentation pattern. The developed model, for the first time, enabled the predication of r$_i$ values without the need for the exact structure of the chemicals, with an $R^2$ of 0.91 and 0.77 and root mean squared error (RMSE) of 47 and 67 r$_i$ units for the Norman and amide test set, respectively. This fragment based model showed comparable accuracy in r$_i$ prediction compared to conventional descriptor-based models that rely on known chemical structure, which obtained a $R^2$ of 0.85 with and RMSE of 67.},
+ preview={RI_paper.png},
+ bibtex_show={true},
+ selected={true}
+}
+
+@article{boelrijk2021bayesian,
+  title={Bayesian optimization of comprehensive two-dimensional liquid chromatography separations},
+  author={Boelrijk, Jim and Pirok, Bob and Ensing, Bernd and Forr{\'e}, Patrick},
+  journal={Journal of Chromatography A},
+  volume={1659},
+  pages={462628},
+  year={2021},
+  publisher={Elsevier},
+  selected={true},
+  abstract={Comprehensive two-dimensional liquid chromatography (LCxLC), is a powerful, emerging separation technique in analytical chemistry. However, as many instrumental parameters need to be tuned, the technique is troubled by lengthy method development. To speed up this process, we applied a Bayesian optimization algorithm. The algorithm can optimize LCxLC method parameters by maximizing a novel chromatographic response function based on the concept of connected components of a graph. The algorithm was benchmarked against a grid search (11,664 experiments) and a random search algorithm on the optimization of eight gradient parameters for four different samples of 50 compounds. The worst-case performance of the algorithm was investigated by repeating the optimization loop for 100 experiments with random starting experiments and seeds. Given an optimization budget of 100 experiments, the Bayesian optimization algorithm generally outperformed the random search and often improved upon the grid search. Moreover, the Bayesian optimization algorithm offered a considerably more sample-efficient alternative to grid searches, as it found similar optima to the grid search in far fewer experiments (a factor of 16–100 times less). This could likely be further improved by a more informed choice of the initialization experiments, which could be provided by the analyst’s experience or smarter selection procedures. The algorithm allows for expansion to other method parameters (e.g., temperature, flow rate, etc.) and unlocks closed-loop automated method development.},
+ bibtex_show={true},
+ preview={autolc-bo.jpg},
+ html={https://doi.org/10.1016/j.chroma.2021.462628}
+}
+
+@article{masterthesis_jim,
+  title={Incorporating maximally localized Wannier functions into neural network potentials [Master thesis, supervised by Ambuj Tiwari]},
+  author={Boelrijk, Jim},
+  year={2019},
+  abstract={A efficient and accurate description of the inter-atomic potential energy surface (PES) is immensely important for molecular modelling, which is a fundamental tool for chemistry, computational biology and material science. While electronic structure methods are accurate, they are computationally expensive. Approximation methods typically are more computationally efficient, yet this comes with a reduction in accuracy. In recent years, the development of atomistic potentials using machine learning (ML) techniques have offered a solution to the accuracy versus efficiency problem. A type of ML, deep neural networks, can "learn" the topology of the PES by adjusting a number of parameters with the aim to reproduce a set of reference \textit{ab initio} data as accurately as possible. These neural network potentials (NNPs) have been used to describe chemical systems, ranging from small organic molecules to complex alloys with high accuracy compared to the underlying electronic structure method, at a fraction of the computational cost. In addition, NNPs allow for linear scaling with system size, making them both accurate and efficient for the study of larger system. Their flexible construction also allows for the making and breaking of bonds, which enables reactivity studies. However, current NNP methods are purely atomistic, and although trained on electronic structure methods, do not incorporate electronic information directly, which limits their application to the computation of non-electronic properties. 
+
+This thesis, investigated the incorporation of electronic information, in the form of maximally localised Wannier functions (MLWFs), within existing NNP frameworks in order to improve accuracy and transferability, while also allowing for the analysis of electronic information. Two scenarios where implemented in the DeepPot-SE method. In the first scenario, the Wannier function centers (WFCs) were considered as classical particles and incorporated in the NNP structure as well as in the local input. In scenario 2, the WFCs were only incorporated in the local input. 
+Although scenario 1 resulted in high-accuracy predictions of the data set, it was not usable for molecular dynamics simulations. It was not evident what mass the WFCs should be given for proper propagation. In addition, a more complete data set must be used in order to cover the state-space of the WFCs, necessary for this scenario. 
+Scenario 2 did not improve prediction accuracy over the conventional methods and a incorporation of the spreads of the WFCs might be necessary to improve this. },
+  preview={wannier_input.png},
+  selected={true}
+}
+
