@@ -1,0 +1,93 @@
+name: Build and deploy website
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: website-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: ruby/setup-ruby@7f797815d8adceb1c412e7abefdd1ab4abc47a5f # v1
+        with:
+          bundler-cache: true
+      - name: Audit Ruby dependencies
+        run: bundle exec bundler-audit check --update
+      - name: Build website
+        env:
+          JEKYLL_ENV: production
+        run: bash bin/cibuild
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: website
+          path: _site/
+          include-hidden-files: true
+          retention-days: 7
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pages: write
+    environment:
+      name: github-pages
+      url: https://jimbo994.github.io/
+    steps:
+      - name: Check out publishing branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: gh-pages
+          path: _publish
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: website
+          path: _site
+      - name: Commit generated website
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          rsync -a --delete --exclude='.git/' --exclude='CNAME' _site/ _publish/
+          git -C _publish config user.name 'github-actions[bot]'
+          git -C _publish config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C _publish add --all
+          if ! git -C _publish diff --cached --quiet; then
+            git -C _publish commit -m "Build website from ${SOURCE_SHA}"
+            git -C _publish push origin HEAD:gh-pages
+          fi
+      - name: Request and check Pages publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          deployed_sha=$(git -C _publish rev-parse HEAD)
+          gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
+          for attempt in $(seq 1 60); do
+            result=$(gh api "repos/${GITHUB_REPOSITORY}/pages/builds/latest")
+            if jq -e --arg sha "$deployed_sha" '.commit == $sha and .status == "built"' <<< "$result" >/dev/null; then
+              echo 'GitHub Pages published successfully.'
+              exit 0
+            fi
+            if jq -e --arg sha "$deployed_sha" '.commit == $sha and .status == "errored"' <<< "$result" >/dev/null; then
+              jq '.error' <<< "$result"
+              exit 1
+            fi
+            sleep 5
+          done
+          echo 'Timed out waiting for GitHub Pages publication.' >&2
+          exit 1
