@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+# Run only after the reviewed source has been merged into master.
+# The workflow builds and audits before publishing to gh-pages.
+exec gh workflow run deploy.yml --ref master
