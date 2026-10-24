@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+bundle exec jekyll build --trace --strict_front_matter
+test -s _site/index.html
+test -s _site/publications/index.html
+test -s _site/assets/pdf/CV_website.pdf
+touch _site/.nojekyll
