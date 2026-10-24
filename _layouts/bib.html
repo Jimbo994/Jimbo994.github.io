@@ -88,6 +88,8 @@
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
             {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+          {%- elsif entry.type == "phdthesis" -%}
+            {%- capture entrytype -%}<em>PhD thesis, {{entry.school}}</em>{%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
@@ -115,7 +117,7 @@
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           {%- endif %}
           {%- if entry.html %}
-            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">{% if entry.type == "phdthesis" %}Thesis{% else %}HTML{% endif %}</a>
           {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}

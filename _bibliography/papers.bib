@@ -10,7 +10,7 @@
   author={Boelrijk, Jim and Ensing, Bernd and Forr{\'e}, Patrick},
   year={2023},
   journal={ICLR},
-  html={https://arxiv.org/abs/2210.02177},
+  html={https://openreview.net/forum?id=fSa5IjNMmmi},
   abstract={Optimizing multiple competing objectives is a common problem across science and industry. The inherent inextricable trade-off between those objectives leads one to the task of exploring their Pareto front. A meaningful quantity for the purpose of the latter is the hypervolume indicator, which is used in Bayesian Optimization (BO) and Evolutionary Algorithms (EAs). However, the computational complexity for the calculation of the hypervolume scales unfavorably with increasing number of objectives and data points, which restricts its use in those common multi-objective optimization frameworks. To overcome these restrictions we propose to approximate the hypervolume function with a deep neural network, which we call DeepHV. For better sample efficiency and generalization, we exploit the fact that the hypervolume is scale-equivariant in each of the objectives as well as permutation invariant w.r.t. both the objectives and the samples, by using a deep neural network that is equivariant w.r.t. the combined group of scalings and permutations. We evaluate our method against exact, and approximate hypervolume methods in terms of accuracy, computation time, and generalization. We also apply and compare our methods to state-of-the-art multi-objective BO methods and EAs on a range of synthetic benchmark test cases. The results show that our methods are promising for such multi-objective optimization tasks.},
  preview={hv_preview.png},
  selected={true}
@@ -43,7 +43,7 @@
 
 @article{boelrijk2022predicting,
   title={Predicting RP-LC retention indices of structurally unknown chemicals from mass spectrometry data},
-  author={Boelrijk, Jim and van Herwerden, Denice and Samanipour, Saer  and Ensing, Bernd and Forr{\'e}, Patrick},
+  author={Boelrijk, Jim and van Herwerden, Denice and Ensing, Bernd and Forr{\'e}, Patrick and Samanipour, Saer},
   year={2023},
   journal={Journal of Cheminformatics},
   html={https://jcheminf.biomedcentral.com/articles/10.1186/s13321-023-00699-8},
@@ -84,15 +84,15 @@ Scenario 2 did not improve prediction accuracy over the conventional methods and
 @article{boelrijk2026shapeaware,
   title={Shape-Aware Gaussian Process Kernels for Closed-Loop Bayesian Optimization of Gradients in Automated LC Method Development},
   author={Boelrijk, Jim and Detlefsen, Sebastian and others},
-  journal={ChemRxiv},
+  journal={ChemRxiv preprint},
   year={2026},
-  html={https://lnkd.in/exnRPGrU},
+  html={https://chemrxiv.org/doi/full/10.26434/chemrxiv.15007862/v2},
   selected={true}
 }
 
 @article{vanhenten2025comparison,
   title={Comparison of optimization algorithms for automated method development of gradient profiles},
-  author={van Henten, Gerben B. and Boelrijk, Jim and Kattenberg, Celine and Bos, Tijmen S. and Ensing, Bernd and Forr{\'e}, Patrick and Pirok, Bob W.J.},
+  author={van Henten, Gerben B. and Boelrijk, Jim and Kattenberg, C{\'e}line and Bos, Tijmen S. and Ensing, Bernd and Forr{\'e}, Patrick and Pirok, Bob W.J.},
   journal={Journal of Chromatography A},
   year={2025},
   doi={10.1016/j.chroma.2024.465626},
@@ -108,4 +108,23 @@ Scenario 2 did not improve prediction accuracy over the conventional methods and
   doi={10.1016/j.chroma.2024.464941},
   html={https://doi.org/10.1016/j.chroma.2024.464941},
   selected={true}
+}
+
+@phdthesis{boelrijk2024thesis,
+  title={Bayesian optimization for liquid chromatography separations},
+  author={Boelrijk, Jim},
+  school={University of Amsterdam},
+  year={2024},
+  html={https://www.dare.uva.nl/id/c8eb1c17-d8f3-446d-8ead-1da762b27c1a}
+}
+
+@article{molenaar2023computerdriven,
+  title={Computer-driven optimization of complex gradients in comprehensive two-dimensional liquid chromatography},
+  author={Molenaar, Stef R.A. and Bos, Tijmen S. and Boelrijk, Jim and Dahlseid, Tina A. and Stoll, Dwight R. and Pirok, Bob W.J.},
+  journal={Journal of Chromatography A},
+  volume={1707},
+  pages={464306},
+  year={2023},
+  doi={10.1016/j.chroma.2023.464306},
+  html={https://doi.org/10.1016/j.chroma.2023.464306}
 }
