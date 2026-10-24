@@ -748,48 +748,26 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
     grid-column: none;
   }
 }
-/* Publication previews use a shared frame so varied paper graphics do not distort the list. */
-.publications ol.bibliography li .preview img.preview, .publications ol.bibliography li .preview .preview-placeholder {
-  width: 100%;
-  height: 116px;
-  max-width: 200px;
-  object-fit: contain;
-  object-position: center;
-  background: #f5f7f9;
-  border-radius: 0.35rem;
-}
-
-.publications ol.bibliography li .preview .preview-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #64748b;
-  font-size: 0.85rem;
-  letter-spacing: 0.03em;
-}
-
-.profile-highlights {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.profile-highlights h2 {
-  font-size: 1.45rem;
-  margin-bottom: 0.75rem;
-}
-
-.profile-highlights ul {
-  padding-left: 1.2rem;
-}
-
-.profile-highlights li {
-  margin-bottom: 0.45rem;
-}
-
+/* Let paper figures fill the preview column at their original proportions. */
 .publications ol.bibliography li {
   margin-bottom: 1.75rem;
 }
-
+.publications ol.bibliography li .preview {
+  max-width: none;
+}
+.publications ol.bibliography li .preview .publication-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.publications ol.bibliography li .title {
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
 .publications h2.year {
   color: var(--global-text-color-light);
   font-size: 1.25rem;
@@ -798,23 +776,25 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   padding-top: 1rem;
 }
 
-.publications ol.bibliography li .title {
-  line-height: 1.45;
-  overflow-wrap: anywhere;
-}
-
-.publications ol.bibliography li .preview img {
-  display: block;
-  width: 100%;
-  height: 116px;
-  object-fit: contain;
-}
-
 @media (max-width: 575px) {
   .publications ol.bibliography li .preview {
-    margin-bottom: 0.75rem;
-    max-width: 240px;
+    margin-bottom: 1rem;
+    max-width: 330px;
   }
+}
+.profile-highlights {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.profile-highlights h2 {
+  font-size: 1.45rem;
+  margin-bottom: 0.75rem;
+}
+.profile-highlights ul {
+  padding-left: 1.2rem;
+}
+.profile-highlights li {
+  margin-bottom: 0.45rem;
 }
 
 /*# sourceMappingURL=main.css.map */
