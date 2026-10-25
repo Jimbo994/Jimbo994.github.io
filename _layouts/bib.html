@@ -90,6 +90,8 @@
             {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
           {%- elsif entry.type == "phdthesis" -%}
             {%- capture entrytype -%}<em>PhD thesis, {{entry.school}}</em>{%- endcapture -%}
+          {%- elsif entry.type == "mastersthesis" -%}
+            {%- capture entrytype -%}<em>Master's thesis, {{entry.school}}</em>{%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
@@ -103,6 +105,7 @@
           <div class="periodical">
             {{ periodical | strip }}
           </div>
+          {% if entry.note %}<div class="publication-note">{{ entry.note }}</div>{% endif %}
         {%- endif %}
         
           <!-- Links/Buttons -->
@@ -117,7 +120,7 @@
             <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
           {%- endif %}
           {%- if entry.html %}
-            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">{% if entry.type == "phdthesis" %}Thesis{% else %}HTML{% endif %}</a>
+            <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">{% if entry.type == "phdthesis" or entry.type == "mastersthesis" %}Thesis{% else %}HTML{% endif %}</a>
           {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}

@@ -4,6 +4,22 @@ These original graphical abstracts replace older square versions that distorted
 the proportions of the figures. The website displays them without resizing their
 aspect ratios.
 
+## Figures selected by Jim on 25 October 2026
+
+These files were supplied by Jim and copied unchanged from his Desktop. The
+website preserves their aspect ratios and adds no frame or shadow.
+
+- `shape-aware.png`: Shape-Aware Gaussian Process Kernels for Closed-Loop Bayesian
+  Optimization of Gradients in Automated LC Method Development (2026).
+- `comparison.png`: Comparison of optimization algorithms for automated method
+  development of gradient profiles (2025).
+- `multi-task.png`: Enhancing LC×LC separations through multi-task Bayesian
+  optimization (2024).
+- `closed-loop.png`: Closed-loop automatic gradient design for liquid
+  chromatography using Bayesian optimization (2023).
+
+## Earlier graphical abstracts
+
 - `closed-loop-graphical-abstract.jpg`: Jim Boelrijk et al., *Closed-loop automatic
   gradient design for liquid chromatography using Bayesian optimization*,
   Analytica Chimica Acta (2023), DOI: 10.1016/j.aca.2023.340789.
