@@ -25,7 +25,7 @@ Open <http://localhost:4000>. Jekyll rebuilds when source files change.
 - Profile photo: `assets/img/prof_pic.jpg`.
 - Downloadable CV: `assets/pdf/CV_website.pdf`; CV page: `_pages/cv.md`.
 - Shared navigation, metadata and settings: `_config.yml` and `_includes/`.
-- Teaching and supervision: `_pages/teaching.md` and `_projects/`.
+- Archived teaching and supervision (hidden from navigation): `_pages/teaching.md` and `_projects/`.
 
 ## Build and audit
 
