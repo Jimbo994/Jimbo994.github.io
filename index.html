@@ -32,7 +32,7 @@
     
     <link rel="shortcut icon" href="/assets/img/favicon-32x32.png"/>
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1792862379">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1792913027">
     <link rel="canonical" href="https://jimbo994.github.io/">
     
     <!-- Dark Mode -->
@@ -204,28 +204,36 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         
+        <div class="col-sm-3 preview"><img alt="Figure for Shape-Aware Gaussian Process Kernels for Closed-Loop Bayesian Optimization of Gradients in Automated LC Method Development" loading="lazy" class="publication-image" src="/assets/img/publication_preview/shape-aware.png"></div>
+
+        
 
         <!-- Entry bib key -->
-        <div id="boelrijk2026shapeaware" class="col-sm-12">
+        <div id="boelrijk2026shapeaware" class="col-sm-9">
         
           <!-- Title -->
           <div class="title">Shape-Aware Gaussian Process Kernels for Closed-Loop Bayesian Optimization of Gradients in Automated LC Method Development</div>
           <!-- Author -->
           <div class="author">
-                  <em>Boelrijk, Jim</em>, Detlefsen, Sebastian, et al.
+                  <em>Boelrijk, Jim</em>, Detlefsen, Sebastian, Dürholt, Johannes P., and Haas, Christian P.
           </div>
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
             <em>ChemRxiv preprint</em> 2026
           </div>
+          
         
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://chemrxiv.org/doi/full/10.26434/chemrxiv.15007862/v2" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">HTML</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Bayesian optimization (BO) is a promising strategy for accelerating gradient-elution liquid chromatography (LC) method development, but its practical success depends on several tightly coupled components. Here we report two main advances. First, for the Gaussian process (GP) surrogate models used within BO, we introduce a shape-aware gradient representation that compares gradient profiles directly through a Wasserstein-distance kernel, rather than through the pump-timetable coordinates used by standard representations. Second, we establish a robust automated acquisition and analysis workflow based on a trap phase that isolates gradient-driven elution and makes reliable closed-loop measurement possible. These are supported by three refinements: a flexible gradient domain with variable method duration and user-defined composition bounds, a window-relative sampler for monotonic gradient programs, and an adaptive reference point for multi-objective optimization. Across in silico and experimental datasets, Wasserstein-based representations generally predict separation quality more accurately than timetable-based approaches, especially when only a few training samples are available. This improved accuracy translates into more data-efficient single- and multi-objective optimization campaigns. Finally, we demonstrate the closed-loop framework in experimental case studies, where both single- and multi-objective campaigns improve upon a custom baseline method for a polymer-additive sample. Together, these results show that shape-aware gradient representations improve both GP predictive accuracy and BO sample efficiency, and that a flexible gradient domain, robust automated acquisition and analysis, and compatible sampling and optimization strategies enable effective closed-loop LC method development.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -233,9 +241,12 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         
+        <div class="col-sm-3 preview"><img alt="Figure for Comparison of optimization algorithms for automated method development of gradient profiles" loading="lazy" class="publication-image" src="/assets/img/publication_preview/comparison.png"></div>
+
+        
 
         <!-- Entry bib key -->
-        <div id="vanhenten2025comparison" class="col-sm-12">
+        <div id="vanhenten2025comparison" class="col-sm-9">
         
           <!-- Title -->
           <div class="title">Comparison of optimization algorithms for automated method development of gradient profiles</div>
@@ -248,13 +259,18 @@
           <div class="periodical">
             <em>Journal of Chromatography A</em> 2025
           </div>
+          
         
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://doi.org/10.1016/j.chroma.2024.465626" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">HTML</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Optimization algorithms play an important role in method development workflows for gradient elution liquid chromatography. Their effectiveness has not been evaluated for chromatographic method development using standardized comparisons across factors such as sample complexity, chromatographic response functions (CRFs), gradient complexity, and application type. This study compares six optimization algorithms - Bayesian optimization (BO), differential evolution (DE), a genetic algorithm (GA), covariance-matrix adaptation evolution strategy (CMA-ES), random search, and grid search - for the development of gradient elution LC methods. Utilizing a multi-linear retention modeling framework, these algorithms were assessed across diverse samples, CRFs, and gradient segments, considering two observation modes: dry (in silico, deconvoluted), and wet (search-based, requiring peak detection). The optimization algorithms were evaluated based on their data (i.e. number of iterations) and time efficiency. Of the algorithms compared in this study, DE proved to be a highly competitive method for dry optimization purposes in terms of both data and time efficiency. BO outperformed all other algorithms in terms of data efficiency and was found to be most effective for search-based optimization, which requires a low number of iterations (&lt;200). However, BO was found to be impractical for dry optimization requiring a large iteration budget due to its unfavorable computational scaling. It was observed that both the CRF and the sample have a strong influence on the efficiency of the algorithms, emphasizing the need for better benchmark samples and highlighting the importance of assessing CRF-induced complexity in the optimization landscape.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -262,9 +278,12 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         
+        <div class="col-sm-3 preview"><img alt="Figure for Enhancing LC×LC separations through multi-task Bayesian optimization" loading="lazy" class="publication-image" src="/assets/img/publication_preview/multi-task.png"></div>
+
+        
 
         <!-- Entry bib key -->
-        <div id="boelrijk2024mtbo" class="col-sm-12">
+        <div id="boelrijk2024mtbo" class="col-sm-9">
         
           <!-- Title -->
           <div class="title">Enhancing LC×LC separations through multi-task Bayesian optimization</div>
@@ -277,13 +296,18 @@
           <div class="periodical">
             <em>Journal of Chromatography A</em> 2024
           </div>
+          
         
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
             <a href="https://doi.org/10.1016/j.chroma.2024.464941" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">HTML</a>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Method development in comprehensive two-dimensional liquid chromatography (LC×LC) is a challenging process. The interdependencies between the two dimensions and the possibility of incorporating complex gradient profiles, such as multi-segmented gradients or shifting gradients, make trial-and-error method development time-consuming and highly dependent on user experience. Retention modeling and Bayesian optimization (BO) have been proposed as solutions to mitigate these issues. However, both approaches have their strengths and weaknesses. On the one hand, retention modeling, which approximates true retention behavior, depends on effective peak tracking and accurate retention time and width predictions, which are increasingly challenging for complex samples and advanced gradient assemblies. On the other hand, Bayesian optimization may require many experiments when dealing with many adjustable parameters, as in LC×LC. Therefore, in this work, we investigate the use of multi-task Bayesian optimization (MTBO), a method that can combine information from both retention modeling and experimental measurements. The algorithm was first tested and compared with BO using a synthetic retention modeling test case, where it was shown that MTBO finds better optima with fewer method-development iterations than conventional BO. Next, the algorithm was tested on the optimization of a method for a pesticide sample and we found that the algorithm was able to improve upon the initial scanning experiments. Multi-task Bayesian optimization is a promising technique in situations where modeling retention is challenging, and the high number of adjustable parameters and/or limited optimization budget makes traditional Bayesian optimization impractical.</p>
+          </div>
         </div>
       </div>
 </li>
@@ -309,6 +333,7 @@
           <div class="periodical">
             <em>ICLR</em> 2023
           </div>
+          
         
           <!-- Links/Buttons -->
           <div class="links">
@@ -327,7 +352,7 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         
-        <div class="col-sm-3 preview"><img alt="Figure for Closed-loop automatic gradient design for liquid chromatography using Bayesian optimization" loading="lazy" class="publication-image" src="/assets/img/publication_preview/closed-loop-graphical-abstract.jpg"></div>
+        <div class="col-sm-3 preview"><img alt="Figure for Closed-loop automatic gradient design for liquid chromatography using Bayesian optimization" loading="lazy" class="publication-image" src="/assets/img/publication_preview/closed-loop.png"></div>
 
         
 
@@ -345,6 +370,7 @@
           <div class="periodical">
             <em>Analytica Chimica Acta</em> 2023
           </div>
+          
         
           <!-- Links/Buttons -->
           <div class="links">
@@ -381,6 +407,7 @@
           <div class="periodical">
             <em>Journal of Cheminformatics</em> 2023
           </div>
+          
         
           <!-- Links/Buttons -->
           <div class="links">
@@ -417,6 +444,7 @@
           <div class="periodical">
             <em>Analytical Chemistry</em> 2022
           </div>
+          
         
           <!-- Links/Buttons -->
           <div class="links">
@@ -453,6 +481,7 @@
           <div class="periodical">
             <em>Journal of Chromatography A</em> 2021
           </div>
+          
         
           <!-- Links/Buttons -->
           <div class="links">
@@ -471,7 +500,7 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         
-        <div class="col-sm-3 preview"><img alt="Figure for Incorporating maximally localized Wannier functions into neural network potentials [Master thesis, supervised by Ambuj Tiwari]" loading="lazy" class="publication-image" src="/assets/img/publication_preview/wannier_input.png"></div>
+        <div class="col-sm-3 preview"><img alt="Figure for Incorporating maximally localized Wannier functions into neural network potentials" loading="lazy" class="publication-image" src="/assets/img/publication_preview/wannier_input.png"></div>
 
         
 
@@ -479,7 +508,7 @@
         <div id="masterthesis_jim" class="col-sm-9">
         
           <!-- Title -->
-          <div class="title">Incorporating maximally localized Wannier functions into neural network potentials [Master thesis, supervised by Ambuj Tiwari]</div>
+          <div class="title">Incorporating maximally localized Wannier functions into neural network potentials</div>
           <!-- Author -->
           <div class="author">
                 <em>Boelrijk, Jim</em>
@@ -487,8 +516,9 @@
 
           <!-- Journal/Book title and date -->
           <div class="periodical">
-            <em></em> 2019
+            <em>Master's thesis, University of Amsterdam</em> 2019
           </div>
+          <div class="publication-note">Supervised by Ambuj Tiwari</div>
         
           <!-- Links/Buttons -->
           <div class="links">
@@ -497,7 +527,7 @@
 
           <!-- Hidden abstract block -->
           <div class="abstract hidden">
-            <p>A efficient and accurate description of the inter-atomic potential energy surface (PES) is immensely important for molecular modelling, which is a fundamental tool for chemistry, computational biology and material science. While electronic structure methods are accurate, they are computationally expensive. Approximation methods typically are more computationally efficient, yet this comes with a reduction in accuracy. In recent years, the development of atomistic potentials using machine learning (ML) techniques have offered a solution to the accuracy versus efficiency problem. A type of ML, deep neural networks, can "learn" the topology of the PES by adjusting a number of parameters with the aim to reproduce a set of reference \textitab initio data as accurately as possible. These neural network potentials (NNPs) have been used to describe chemical systems, ranging from small organic molecules to complex alloys with high accuracy compared to the underlying electronic structure method, at a fraction of the computational cost. In addition, NNPs allow for linear scaling with system size, making them both accurate and efficient for the study of larger system. Their flexible construction also allows for the making and breaking of bonds, which enables reactivity studies. However, current NNP methods are purely atomistic, and although trained on electronic structure methods, do not incorporate electronic information directly, which limits their application to the computation of non-electronic properties. 
+            <p>A efficient and accurate description of the inter-atomic potential energy surface (PES) is immensely important for molecular modelling, which is a fundamental tool for chemistry, computational biology and material science. While electronic structure methods are accurate, they are computationally expensive. Approximation methods typically are more computationally efficient, yet this comes with a reduction in accuracy. In recent years, the development of atomistic potentials using machine learning (ML) techniques have offered a solution to the accuracy versus efficiency problem. A type of ML, deep neural networks, can "learn" the topology of the PES by adjusting a number of parameters with the aim to reproduce a set of reference <em>ab initio</em> data as accurately as possible. These neural network potentials (NNPs) have been used to describe chemical systems, ranging from small organic molecules to complex alloys with high accuracy compared to the underlying electronic structure method, at a fraction of the computational cost. In addition, NNPs allow for linear scaling with system size, making them both accurate and efficient for the study of larger system. Their flexible construction also allows for the making and breaking of bonds, which enables reactivity studies. However, current NNP methods are purely atomistic, and although trained on electronic structure methods, do not incorporate electronic information directly, which limits their application to the computation of non-electronic properties.
 
 This thesis, investigated the incorporation of electronic information, in the form of maximally localised Wannier functions (MLWFs), within existing NNP frameworks in order to improve accuracy and transferability, while also allowing for the analysis of electronic information. Two scenarios where implemented in the DeepPot-SE method. In the first scenario, the Wannier function centers (WFCs) were considered as classical particles and incorporated in the NNP structure as well as in the local input. In scenario 2, the WFCs were only incorporated in the local input. 
 Although scenario 1 resulted in high-accuracy predictions of the data set, it was not usable for molecular dynamics simulations. It was not evident what mass the WFCs should be given for proper propagation. In addition, a more complete data set must be used in order to cover the state-space of the WFCs, necessary for this scenario. 
@@ -537,7 +567,7 @@ Scenario 2 did not improve prediction accuracy over the conventional methods and
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2026 Jim  Boelrijk. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
-Last updated: October 24, 2026.
+Last updated: October 25, 2026.
       </div>
     </footer>
 

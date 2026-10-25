@@ -749,6 +749,25 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   }
 }
 /* Let paper figures fill the preview column at their original proportions. */
+.publication-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.publications section {
+  scroll-margin-top: 5rem;
+}
+.publications .section-heading {
+  font-size: 1.65rem;
+  margin-bottom: 1rem;
+}
+.publications #theses {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+}
 .publications ol.bibliography li {
   margin-bottom: 1.75rem;
 }
@@ -768,7 +787,11 @@ d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   line-height: 1.45;
   overflow-wrap: anywhere;
 }
-.publications h2.year {
+.publications ol.bibliography li .publication-note {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+.publications .year {
   color: var(--global-text-color-light);
   font-size: 1.25rem;
   text-align: left;
