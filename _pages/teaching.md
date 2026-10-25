@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching & Supervision
 description: 
 display_categories: [Master students, Bachelor students]
-nav: true
+nav: false
 nav_order: 3
 ---
 
