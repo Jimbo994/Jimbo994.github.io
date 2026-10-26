@@ -18,6 +18,15 @@ website preserves their aspect ratios and adds no frame or shadow.
 - `closed-loop.png`: Closed-loop automatic gradient design for liquid
   chromatography using Bayesian optimization (2023).
 
+## Figures supplied by Jim on 26 October 2026
+
+- `2DLC_RM.jpg`: Computer-driven optimization of complex gradients in comprehensive
+  two-dimensional liquid chromatography (2023).
+- `thesis.png`: cover image for Bayesian optimization for liquid chromatography
+  separations (PhD thesis, 2024), moved here from `assets/img/thesis.png`.
+
+Both files are displayed unchanged at their original aspect ratios.
+
 ## Earlier graphical abstracts
 
 - `closed-loop-graphical-abstract.jpg`: Jim Boelrijk et al., *Closed-loop automatic
