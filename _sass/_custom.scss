@@ -1,4 +1,4 @@
-/* Let paper figures fill the preview column at their original proportions. */
+/* Center paper figures in equal, invisible display areas. */
 .publication-sections {
   display: flex;
   flex-wrap: wrap;
@@ -26,11 +26,21 @@
     .preview {
       max-width: none;
 
+      .publication-preview {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       .publication-image {
         display: block;
         width: 100%;
-        height: auto;
-        background: #fff;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        background: transparent;
         border: 0;
         border-radius: 0;
         box-shadow: none;

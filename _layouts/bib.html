@@ -5,11 +5,13 @@
         {% if entry.preview or entry.abbr %}
         <div class="col-sm-3 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
+          <div class="publication-preview">
           {% if entry.preview contains '://' -%}
           <img alt="Figure for {{ entry.title | escape }}" loading="lazy" class="publication-image" src="{{ entry.preview }}">
           {%- else -%}
           <img alt="Figure for {{ entry.title | escape }}" loading="lazy" class="publication-image" src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}">
           {%- endif -%}
+          </div>
         {%- elsif entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
           <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
