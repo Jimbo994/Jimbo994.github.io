@@ -27,6 +27,21 @@ Open <http://localhost:4000>. Jekyll rebuilds when source files change.
 - Shared navigation, metadata and settings: `_config.yml` and `_includes/`.
 - Archived teaching and supervision (hidden from navigation): `_pages/teaching.md` and `_projects/`.
 
+### Update the public CV
+
+The public download uses the general CV from the adjacent `CV` checkout:
+`main3_fancy_onecolumn.tex`. After editing that source, compile it and copy the
+result into this repository:
+
+```bash
+cd ../CV
+tectonic --outdir output/pdf main3_fancy_onecolumn.tex
+cp output/pdf/main3_fancy_onecolumn.pdf ../Jimbo994.github.io/assets/pdf/CV_website.pdf
+```
+
+Update `cv_updated` in `_pages/cv.md` when replacing the PDF. The embedded preview
+and download share the same PDF URL, with a build version to refresh cached copies.
+
 ## Build and audit
 
 ```bash
