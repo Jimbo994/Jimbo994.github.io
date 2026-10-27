@@ -5,7 +5,7 @@ title: CV
 nav: true
 nav_order: 2
 cv_pdf: CV_website.pdf
-cv_updated: 2026-10-26
+cv_updated: 2026-10-27
 ---
 
 {% assign cv_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
